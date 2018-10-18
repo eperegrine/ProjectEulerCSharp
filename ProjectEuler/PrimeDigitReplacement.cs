@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace ProjectEuler
 {
-    class Program
+    class PrimeDigitReplacement : EulerTask
     {
-        static void Main(string[] args)
+        const int MIN = 1000;
+        public void Run()
         {
-            EulerTask task = new ProductSumNumbers();
-            task.Run();
-
-            Console.ReadKey();
+            
         }
     }
 }
