@@ -10,7 +10,7 @@ namespace ProjectEuler
     {
         static void Main(string[] args)
         {
-            EulerTask task = new FactorialDigitSum();
+            EulerTask task = new PermutedMultiples();
             task.Run();
 
             Console.ReadKey();

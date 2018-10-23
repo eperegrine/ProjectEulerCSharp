@@ -48,6 +48,7 @@
     <Compile Include="FactorialDigitSum.cs" />
     <Compile Include="LargestPlaindromeProduct.cs" />
     <Compile Include="Multiples3And5.cs" />
+    <Compile Include="PermutedMultiples.cs" />
     <Compile Include="PrimeDigitReplacement.cs" />
     <Compile Include="ProductSumNumbers.cs" />
     <Compile Include="Program.cs" />
