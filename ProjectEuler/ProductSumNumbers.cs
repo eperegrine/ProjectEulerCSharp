@@ -12,6 +12,14 @@ namespace ProjectEuler
         {
             Console.WriteLine("Product sum");
 
+            int size = 2;
+
+            List<List<int>> perm = new List<List<int>>();
+            List<int> activeList = new List<int>();
+            P(ref perm, ref activeList, 1, size, size);
+            UTILS.Print2DList(perm);
+
+            /*
             List<int> nums = GetPossibleNums(3).ToList();
             List<List<int>> perms = Permutations(nums, nums.Count);
 
@@ -28,6 +36,7 @@ namespace ProjectEuler
 
             UTILS.Print2DList(productSums);
             UTILS.PrintList(totals);
+            */
         }
 
         public bool IsProductSum(List<int> set)
@@ -60,6 +69,22 @@ namespace ProjectEuler
 
             return orders;
         }*/
+        
+        public void P(ref List<List<int>> result, ref List<int> activeList, int lastItemAdded, int size, int highestNum)
+        {
+            if (activeList.Count() == size)
+            {
+                result.Add(activeList);
+                activeList = new List<int>();
+                return;
+            }
+
+            for (int i = lastItemAdded; i <= highestNum; i++)
+            {
+                activeList.Add(i);
+                P(ref result,ref activeList, i, size, highestNum);
+            }
+        }
 
         public List<List<int>> Permutations(List<int> items, int size)
         {

@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,6 +45,7 @@
   <ItemGroup>
     <Compile Include="EulerTask.cs" />
     <Compile Include="EvenFibNumbers.cs" />
+    <Compile Include="FactorialDigitSum.cs" />
     <Compile Include="LargestPlaindromeProduct.cs" />
     <Compile Include="Multiples3And5.cs" />
     <Compile Include="PrimeDigitReplacement.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SumSquareDifference.cs" />
+    <Compile Include="ThousandDigitFib.cs" />
     <Compile Include="UTILS.cs" />
   </ItemGroup>
   <ItemGroup>
