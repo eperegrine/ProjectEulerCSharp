@@ -8,6 +8,8 @@ namespace ProjectEuler
 {
     class PermutedMultiples : EulerTask
     {
+        public int Permutations = 6;
+
         public void Run()
         {
             BigInteger n = 125874;
@@ -23,19 +25,11 @@ namespace ProjectEuler
 
         public bool IsPermutedMultiple(BigInteger n)
         {
-            BigInteger[] nums = new BigInteger[]
-            {
-                n,
-                n*2,
-                n*3,
-                n*4,
-                n*5,
-                n*6
-            };
+            BigInteger[] numbers = Enumerable.Range(1, Permutations).Select(i => n * i).ToArray();
 
             bool running = true;
             BigInteger? last = null;
-            foreach(BigInteger num in nums)
+            foreach(BigInteger num in numbers)
             {
                 if (last.HasValue)
                 {
