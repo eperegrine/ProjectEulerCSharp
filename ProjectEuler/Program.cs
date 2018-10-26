@@ -11,6 +11,7 @@ namespace ProjectEuler
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Enter the name of the task");
             string taskName =  "ProjectEuler." + Console.ReadLine();
 
